@@ -75,5 +75,5 @@ gem 'unicorn'
 # Bootstrap pagination
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
-gem 'device'
+gem 'devise'
 
