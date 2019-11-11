@@ -5,6 +5,8 @@
 <table>
   <thead>
     <tr>
+      <th>User</th>
+      <th>Phone number</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,6 +14,8 @@
   <tbody>
     <% @phones.each do |phone| %>
       <tr>
+        <td><%= phone.user %></td>
+        <td><%= phone.phone_number %></td>
         <td><%= link_to 'Show', phone %></td>
         <td><%= link_to 'Edit', edit_phone_path(phone) %></td>
         <td><%= link_to 'Destroy', phone, method: :delete, data: { confirm: 'Are you sure?' } %></td>
